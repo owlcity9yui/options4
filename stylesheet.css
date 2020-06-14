@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+a:link {
+  text-decoration: none;
+  color: #333;
+}
+body {
+    margin: 80px 40px;
+}
+#choice4 {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: solid 1px #dee7ec;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.option-title, .options {
+  text-align: center;
+}
+.option-title {
+  background-color: #4c6473;
+  color: white;
+  padding: 12px 0;
+}
+.option-title p {
+  display: inline-block;
+}
+.option-title img {
+  height: 30px;
+  position: relative;
+  top: 9px;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+}
+.option1, .option2, .option3, .option4 {
+  flex: auto;
+  width: 50%;
+  position: relative;
+}
+
+/*ここからボーダーライン*/
+.option1 {
+  border-right: solid 1px #333;
+  border-bottom: solid 1px #333;
+}
+.option2 {
+  border-left: solid 1px #333;
+  border-bottom: solid 1px #333;
+}
+.option3 {
+  border-right: solid 1px #333;
+  border-top: solid 1px #333;
+}
+.option4 {
+  border-left: solid 1px #333;
+  border-top: solid 1px #333;
+}
+/*ここまでボーダーライン*/
+
+.options img {
+  width: 250px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.explanation {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+/*ここからナンバリング*/
+.number1 {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background-color: #4c6473;
+  color: white;
+}
+.number2 {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  background-color: #4c6473;
+  color: white;
+}
+.number3 {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  background-color: #4c6473;
+  color: white;
+}
+.number4 {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  background-color: #4c6473;
+  color: white;
+}
+/*ここまでナンバリング*/
+
+#contents {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h2 {
+  background-color: #4c6473;
+  color: white;
+  padding: 15px;
+  margin-top: 140px;
+}
+
+/*---------------------------------------------------------------------*/
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  line-height: 45px;
+  }
+
+.button:hover {
+  background-color: #4C6473;
+  box-shadow: 0px 15px 20px rgb(76,100,115,0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
