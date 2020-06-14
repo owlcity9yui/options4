@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang=ja dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>4択イメージオプション</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- jQuery.jsの読み込み -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<!-- スムーズスクロール部分の記述 -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+  </head>
+
+  <body>
+    <section id="choice4">
+      <div class="option-title">
+        <img src="img/fruit_peach.png" alt="">
+        <p>桃太郎の鬼退治パーティどれにする？</p>
+        <img src="img/fruit_peach.png" alt="">
+      </div>
+      <div class="options">
+        <div class="option1">
+          <p class="explanation">ばっちり<br>がんばれ</p>
+          <img src="img/party1.png" alt="">
+          <p class="number1">1</p>
+          <div class="wrap">
+          <a href="#1" class="button">これ！</a>
+          </div>
+        </div>
+        <div class="option2">
+          <p class="explanation">がんがん<br>いこうぜ</p>
+          <img src="img/party2.png" alt="">
+          <p class="number2">2</p>
+          <div class="wrap">
+          <a href="#2" class="button">これ！</a>
+          </div>
+        </div>
+        <div class="option3">
+          <p class="explanation">いのち<br>だいじに</p>
+          <img src="img/party3.png" alt="">
+          <p class="number3">3</p>
+          <div class="wrap">
+          <a href="#3" class="button">これ！</a>
+          </div>
+        </div>
+        <div class="option4">
+          <p class="explanation">伝説の<br>パーティー</p>
+          <img src="img/party4.png" alt="">
+          <p class="number4">4</p>
+          <div class="wrap">
+          <a href="#4" class="button">これ！</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contents">
+      <h2><a id="1">ばっちりがんばれ</a></h2>
+      <p>オーソドックスなバランスに優れたパーティ。</p>
+      <p>仲良く旅を楽しむにはいいが、なぜこいつらが鬼に勝てるのか甚だ疑問。</p>
+
+
+      <h2><a id="2">がんがんいこうぜ</a></h2>
+      <p>攻撃重視のライオン、トラ、ハイエナをパーティにした構成。</p>
+      <p>おばあちゃんはきび団子ではなく、肉団子を持たせよう。</p>
+
+
+      <h2><a id="3">いのちだいじに</a></h2>
+      <p>回復と防御を中心にした持久戦を軸に立ち回る。</p>
+      <p>ゾウを盾にしながら、キツネが補助に徹し、犬は適宜回復をする。</p>
+
+
+      <h2><a id="4">伝説のパーティ</a></h2>
+      <p>動物を餌付けるのではなく、コミュ力を駆使して堅実にギルドから人員を充てる。</p>
+      <p>竜騎士、魔導士、アルソックの優秀なパーティで桃太郎の存在感は薄れるばかり。</p>
+    </section>
+  </body>
+</html>
